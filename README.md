@@ -1,12 +1,3 @@
-# M3U8 PRO SYSTEM
+## 🚀 Deploy to Render
 
-## Deploy
-1. Upload to GitHub
-2. Connect to Render
-3. Deploy
-
-## Bot
-Set BOT_TOKEN in environment variables
-
-## Commands
-/video M3U8_LINK
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
