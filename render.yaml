@@ -1,6 +1,17 @@
 services:
+  # 🌐 API SERVICE
   - type: web
     name: m3u8-api
     env: node
     buildCommand: npm install
     startCommand: node index.js
+
+  # 🤖 TELEGRAM BOT (BACKGROUND WORKER)
+  - type: worker
+    name: telegram-bot
+    env: node
+    buildCommand: npm install
+    startCommand: node bot.js
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
